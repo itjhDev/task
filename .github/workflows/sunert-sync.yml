@@ -1,9 +1,8 @@
-# Sunert脚本同步
 
 name: sunert-sync
 on:
   schedule:
-    - cron: '2 */3 * * *'
+    - cron: '1 */3 * * *'
   workflow_dispatch:
   watch:
     types: started
@@ -20,11 +19,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync sunert
+      - name: sync sunert1
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
           source_repo: "https://github.com/Sunert/Script.git"
           source_branch: "master"
           destination_branch: "sunert"
-          github_token: ${{ sunert.PAT }}
+          github_token: ${{ secrets.PAT }}
