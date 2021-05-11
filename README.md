@@ -1,3 +1,7 @@
+<p align="center"> 
+  <img src="https://github-readme-stats.vercel.app/api?username=itjhDev&show_icons=true&theme=vue" />
+</p
+
 # 不要fork! 不要Star! 不要远程调用! 同步此库，然后调用自己的库，谢谢
 
 ## 特别声明: 
