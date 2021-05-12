@@ -10,6 +10,9 @@ function getRandomInt(max) {
 }
 
 function City_ValidCheck(para) {
+   if(para=="台湾"){
+    para="中華民國"  
+   }
   if(para) {
     if (para.length<6) {
       return para
